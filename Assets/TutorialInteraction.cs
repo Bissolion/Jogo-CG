@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class TutorialInteraction : MonoBehaviour
 {
-    public GameObject painelTutorial; // Arraste um painel UI (Canvas) aqui
+    public GameObject painelTutorial; 
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            painelTutorial.SetActive(true); // Mostra a dica
+            painelTutorial.SetActive(true); 
         }
     }
 
@@ -16,7 +16,7 @@ public class TutorialInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            painelTutorial.SetActive(false); // Esconde a dica
+            painelTutorial.SetActive(false); 
         }
     }
 }

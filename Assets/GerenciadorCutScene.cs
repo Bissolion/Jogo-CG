@@ -1,11 +1,11 @@
 using System.Collections;
 using UnityEngine;
-using Unity.Cinemachine; // Novo Namespace da versão 3
+using Unity.Cinemachine; 
 
 public class GerenciadorCutscene : MonoBehaviour
 {
     public PlayerController jogador;
-    public CinemachineCamera vcamApresentacao; // Arraste sua câmera aqui
+    public CinemachineCamera vcamApresentacao; 
     public float tempoDeApresentacao = 5f;
 
     void Start()
@@ -18,7 +18,6 @@ public class GerenciadorCutscene : MonoBehaviour
         jogador.emCutscene = true;
         vcamApresentacao.Priority = 20;
 
-        // Na versão nova, o componente se chama CinemachineSplineDolly
         var dolly = vcamApresentacao.GetComponent<CinemachineSplineDolly>();
 
         if (dolly != null)
@@ -27,7 +26,6 @@ public class GerenciadorCutscene : MonoBehaviour
             while (tempoPassado < tempoDeApresentacao)
             {
                 tempoPassado += Time.deltaTime;
-                // O valor vai de 0 a 1 (0% a 100% do trilho)
                 dolly.CameraPosition = Mathf.Lerp(0f, 1f, tempoPassado / tempoDeApresentacao);
                 yield return null;
             }
