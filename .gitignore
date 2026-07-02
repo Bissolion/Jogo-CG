@@ -1,0 +1,42 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# MemoryCaptures
+/[Mm]emoryCaptures/
+
+# Recordings
+/Recordings/
+
+# Output folder for packages
+/[Pp]ackages/build/
+
+# Ignore old Unity projects
+/Assets/Plugins/Editor/JetBrains*
+
+# Projetos de IDEs
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Arquivos de Sistema
+.DS_Store
+Thumbs.db
